@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!© 2020 PamlaNL
+All rights reserved.
+Alle rechten voorbehouden.>
+<html>
+  <head>
+    <title>Speurtocht Ophovenerhof</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+    </style>
+  </head>
+  <body>
+  <link rel="stylesheet" type="text/css" href="Design.css">
+  <div id="pageOne">
+	<button id="nextPage" class="nextPage" onclick="nextPage()">Volgende pagina --></button>
+	<img src="assets/logo.png" id="image">
+	<div id="text">
+	Welkom bij de speurtocht op de Streekboerderij Daniken. <br><br>We wensen u een fijne ervaring.
+	</div>
+	</div>
+  <div id="pageTwo">
+  <div id="instructies">
+  	Instructies speurtocht:
+	<br>
+	<br>
+	1. Je begint zometeen met de speurtocht bij Manege ten Eysden.
+	<br>
+	2. Dan loop je vervolgens een route die de kaart op je telefoon aangeeft.
+	<br>
+	3. Bij een aantal punten zal er een vraag op je scherm komen die je moet beantwoorden.
+	<br>
+	4. Heb je deze vraag goed krijg je er 100 punten bij en heb je deze fout gaan er 100 punten vanaf.
+	<br>
+	5. Er zijn in totaal 18 vragen 1800 punten te verdienen.
+
+    Veel plezier en succes!
+  </div>
+  <button id="nextPage" class="nextPage" onclick="startGame()">Volgende pagina --></button>
+  <button id="previousPage" onclick="previousPage()"><-- Vorige pagina</button>
+  </div>
+  <div id="punten">
+  </div>
+  <div id="vragen">
+  </div>
+  <div id="vraag1">
+  <form>
+    <p id="question1">Vraag 1: In welk jaar is Streekboerderij Daniken verbouwd? </p>
+    <input type="radio" name="1" id="2000"> 2000<br>
+    <input type="radio" name="1" id="2004"> 2004<br>
+	<input type="radio" name="1" id="2007"> 2007<br>
+    <input type="radio" name="1" id="2010"> 2010
+  </form>
+  <br>
+  <button id="submit1" class="controleren" onclick="submit1()">Antwoord controleren.</button>
+  <div id="goed1" class="resultaat">
+  </div>
+  <div id="fout1" class="resultaat">
+  </div>
+  </div>
+   <div id="vraag2">
+  <form>
+    <p id="question2">Vraag 2: Hoe wordt een baby schaap genoemd? </p>
+    <input type="radio" name="2" id="stier"> Een stier<br>
+    <input type="radio" name="2" id="lammetje"> Een lammetje<br>
+	<input type="radio" name="2" id="kalfje"> Een kalfje<br>
+    <input type="radio" name="2" id="veulen"> Een veulen
+  </form>
+  <br>
+  <button id="submit2" class="controleren" onclick="submit2()">Antwoord controleren.</button>
+  <div id="goed2" class="resultaat">
+  </div>
+  <div id="fout2" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag3">
+  <form>
+    <p id="question3">Vraag 3: Wat is het verschil tussen een meertje en een beekje?  </p>
+    <input type="radio" name="3" id="groot"> Meer is grote plas en beek is lang en dun<br>
+    <input type="radio" name="3" id="lang"> Meer is lang en dun beek is grote plas
+  </form>
+  <br>
+  <button id="submit3" class="controleren" onclick="submit3()">Antwoord controleren.</button>
+  <div id="goed3" class="resultaat">
+  </div>
+  <div id="fout3" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag4">
+  <form>
+    <p id="question4">Vraag 4: Waarin verandert een rups als hij gaat poppen? </p>
+    <input type="radio" name="4" id="vlinder"> Een vlinder<br>
+    <input type="radio" name="4" id="rups"> Een rups<br>
+	<input type="radio" name="4" id="vlieg"> Een vlieg<br>
+    <input type="radio" name="4" id="vogel"> Een vogel
+  </form>
+  <br>
+  <button id="submit4" class="controleren" onclick="submit4()">Antwoord controleren.</button>
+  <div id="goed4" class="resultaat">
+  </div>
+  <div id="fout4" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag5">
+  <form>
+    <p id="question5">Vraag 5: Hoe wordt een mannelijke kip genoemd? </p>
+    <input type="radio" name="5" id="hen"> Een hen<br>
+    <input type="radio" name="5" id="haan"> Een haan<br>
+	<input type="radio" name="5" id="bok"> Een bok<br>
+    <input type="radio" name="5" id="ram"> Een ram
+  </form>
+  <br>
+  <button id="submit5" class="controleren" onclick="submit5()">Antwoord controleren.</button>
+  <div id="goed5" class="resultaat">
+  </div>
+  <div id="fout5" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag6">
+  <form>
+    <p id="question6">Vraag 6: Hoe worden de kinderen van kikkers genoemd in hun eerste periode?  </p>
+    <input type="radio" name="6" id="kikkervisje"> Een kikkervisje<br>
+    <input type="radio" name="6" id="kikkerdril"> Een kikkerdril<br>
+	<input type="radio" name="6" id="kikkerbaby"> Een kikkerbaby
+  </form>
+  <br>
+  <button id="submit6" class="controleren" onclick="submit6()">Antwoord controleren.</button>
+  <div id="goed6" class="resultaat">
+  </div>
+  <div id="fout6" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag7">
+  <form>
+    <p id="question7">Vraag 7: Welke kever is rood met zwarte stippen? </p>
+    <input type="radio" name="7" id="vliegendhert"> Een vliegend hert<br>
+    <input type="radio" name="7" id="vuurkever"> Een vuurkever<br>
+	<input type="radio" name="7" id="lieveheersbeestje"> Een lieveheersbeestje<br>
+    <input type="radio" name="7" id="loopkever"> Een loopkever
+  </form>
+  <br>
+  <button id="submit7" class="controleren" onclick="submit7()">Antwoord controleren.</button>
+  <div id="goed7" class="resultaat">
+  </div>
+  <div id="fout7" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag8">
+  <form>
+    <p id="question8">Vraag 8: Waaruit verzamelen bijen honing? </p>
+    <input type="radio" name="8" id="nectar"> Nectar van bloemen<br>
+    <input type="radio" name="8" id="bloemen"> Bloemen<br>
+	<input type="radio" name="8" id="suiker"> Suiker<br>
+    <input type="radio" name="8" id="planten"> Planten
+  </form>
+  <br>
+  <button id="submit8" class="controleren" onclick="submit8()">Antwoord controleren.</button>
+  <div id="goed8" class="resultaat">
+  </div>
+  <div id="fout8" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag9">
+  <form>
+    <p id="question9">Vraag 9: Hoe wordt de baby van een kat genoemd? </p>
+    <input type="radio" name="9" id="welp"> Een welp<br>
+    <input type="radio" name="9" id="kitten"> Een kitten<br>
+	<input type="radio" name="9" id="kalf"> Een kalf<br>
+    <input type="radio" name="9" id="big"> Een big
+  </form>
+  <br>
+  <button id="submit9" class="controleren" onclick="submit9()">Antwoord controleren.</button>
+  <div id="goed9" class="resultaat">
+  </div>
+  <div id="fout9" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag10">
+  <form>
+    <p id="question10">Vraag 10: Wanneer is dierendag? </p>
+    <input type="radio" name="10" id="2sep"> 2 september<br>
+    <input type="radio" name="10" id="4sep"> 4 september<br>
+	<input type="radio" name="10" id="2okt"> 2 oktober<br>
+    <input type="radio" name="10" id="4okt"> 4 oktober
+  </form>
+  <br>
+  <button id="submit10" class="controleren" onclick="submit10()">Antwoord controleren.</button>
+  <div id="goed10" class="resultaat">
+  </div>
+  <div id="fout10" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag11">
+  <form>
+    <p id="question11">Vraag 11: Hoe lang is de beek? </p>
+    <input type="radio" name="11" id="korter"> Korter dan 40 kilometer<br>
+    <input type="radio" name="11" id="langer"> Langer dan 40 kilometer
+  </form>
+  <br>
+  <button id="submit11" class="controleren" onclick="submit11()">Antwoord controleren.</button>
+  <div id="goed11" class="resultaat">
+  </div>
+  <div id="fout11" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag12">
+  <form>
+    <p id="question12">Vraag 12: Welke kleur heeft een vrouwtjes eend in de beek? </p>
+    <input type="radio" name="12" id="bruin"> Bruin<br>
+    <input type="radio" name="12" id="gmg"> Groen met grijs<br>
+	<input type="radio" name="12" id="wit"> Wit<br>
+    <input type="radio" name="12" id="zwart"> Zwart
+  </form>
+  <br>
+  <button id="submit12" class="controleren" onclick="submit12()">Antwoord controleren.</button>
+  <div id="goed12" class="resultaat">
+  </div>
+  <div id="fout12" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag13">
+  <form>
+    <p id="question13">Vraag 13: Zwemmen de vissen tegen de stroming in of met de stroming mee? </p>
+    <input type="radio" name="13" id="met"> Met de stroming mee<br>
+    <input type="radio" name="13" id="tegen"> Tegen de stroming in
+  </form>
+  <br>
+  <button id="submit13" class="controleren" onclick="submit13()">Antwoord controleren.</button>
+  <div id="goed13" class="resultaat">
+  </div>
+  <div id="fout13" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag14">
+  <form>
+    <p id="question14">Vraag 14: Bij welke soort boom sta je nu? </p>
+    <input type="radio" name="14" id="beuk"> Beukenboom<br>
+    <input type="radio" name="14" id="eik"> Eikenboom
+  </form>
+  <br>
+  <button id="submit14" class="controleren" onclick="submit14()">Antwoord controleren.</button>
+  <div id="goed14" class="resultaat">
+  </div>
+  <div id="fout14" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag15">
+  <form>
+    <p id="question15">Vraag 15: Is het water in de beek zoet of zout water?  </p>
+    <input type="radio" name="15" id="zoet"> Zoet<br>
+    <input type="radio" name="15" id="zout"> Zout
+  </form>
+  <br>
+  <button id="submit15" class="controleren" onclick="submit15()">Antwoord controleren.</button>
+  <div id="goed15" class="resultaat">
+  </div>
+  <div id="fout15" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag16">
+  <form>
+    <p id="question16">Vraag 16: Hoeveel bruggen zie je nu je voor de ingang van de kinderboerderij staat? </p>
+    <input type="radio" name="16" id="2"> 2 bruggen<br>
+    <input type="radio" name="16" id="3"> 3 bruggen<br>
+	<input type="radio" name="16" id="4"> 4 bruggen
+  </form>
+  <br>
+  <button id="submit16" class="controleren" onclick="submit16()">Antwoord controleren.</button>
+  <div id="goed16" class="resultaat">
+  </div>
+  <div id="fout16" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag17">
+  <form>
+    <p id="question17">Vraag 17: Leven er insecten in het water? </p>
+    <input type="radio" name="17" id="ja"> Ja<br>
+    <input type="radio" name="17" id="nee"> Nee
+  </form>
+  <br>
+  <button id="submit17" class="controleren" onclick="submit17()">Antwoord controleren.</button>
+  <div id="goed17" class="resultaat">
+  </div>
+  <div id="fout17" class="resultaat">
+  </div>
+  </div>
+  <div id="vraag18">
+  <form>
+    <p id="question18">Vraag 18: Waar eindigt de Geleenbeek? </p>
+    <input type="radio" name="18" id="rivier"> Rivier<br>
+    <input type="radio" name="18" id="zee"> Zee<br>
+	<input type="radio" name="18" id="maas"> Maas
+  </form>
+  <br>
+  <button id="submit18" class="controleren" onclick="submit18()">Antwoord controleren.</button>
+  <div id="goed18" class="resultaat">
+  </div>
+  <div id="fout18" class="resultaat">
+  </div>
+  </div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="scripts/location.js"></script>
+	<div id="mapid"></div>
+	<div id="demo"></div>
+  </body>
+</html>
